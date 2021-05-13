@@ -8,8 +8,8 @@
 
 ## Introduction
 
-You've just been onboarded to the dev team working on Flatbook, the world's
-premier Flatiron School-based social network. Here at Flatbook, we have some
+You've just been onboarded to the dev team working on Axibook, the world's
+premier Academy Xi-based social network. Here at Axibook, we have some
 pretty complex data-modeling needs. For instance, think about the breadth of
 information we might want to display on each user's profile page:
 
@@ -35,18 +35,18 @@ _shallow_ (non-nested) JavaScript object:
 const userInfo = {
   firstName: 'Avi',
   lastName: 'Flombaum',
-  companyName: 'Flatbook Labs',
+  companyName: 'Axibook Labs',
   jobTitle: 'Developer Apprentice',
   friend1firstName: 'Nancy',
   friend1lastName: 'Burgess',
-  friend1companyName: 'Flatbook Labs',
+  friend1companyName: 'Axibook Labs',
   friend1jobTitle: 'Developer Apprentice',
   friend2firstName: 'Corinna',
   friend2lastName: 'Jackson',
-  friend2companyName: 'Flatbook Labs',
+  friend2companyName: 'Axibook Labs',
   friend2jobTitle: 'Senior Developer',
-  project1title: 'Flatbook',
-  project1description: 'The premier Flatiron School-based social network in the world.',
+  project1title: 'Axibook',
+  project1description: 'The premier Academy Xi-based social network in the world.',
   project2title: 'Scuber',
   project2description: 'A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.'
 };
@@ -68,14 +68,14 @@ const userInfo = {
   firstName: 'Avi',
   lastName: 'Flombaum',
   company: {
-    name: 'Flatbook Labs',
+    name: 'Axibook Labs',
     jobTitle: 'Developer Apprentice'
   },
   friends: [{
     firstName: 'Nancy',
     lastName: 'Burgess',
     company: {
-      name: 'Flatbook Labs',
+      name: 'Axibook Labs',
       jobTitle: 'Developer Apprentice'
     }
   },
@@ -83,13 +83,13 @@ const userInfo = {
     firstName: 'Corinna',
     lastName: 'Jackson',
     company: {
-      name: 'Flatbook Labs',
+      name: 'Axibook Labs',
       jobTitle: 'Lead Developer'
     }
   }],
   projects: [{
-    title: 'Flatbook',
-    description: 'The premier Flatiron School-based social network in the world.'
+    title: 'Axibook',
+    description: 'The premier Academy Xi-based social network in the world.'
   },
   {
     title: 'Scuber',
@@ -194,18 +194,18 @@ that it was very easy to iterate over all of the information:
 const userInfo = {
   firstName: 'Avi',
   lastName: 'Flombaum',
-  companyName: 'Flatbook Labs',
+  companyName: 'Axibook Labs',
   jobTitle: 'Developer Apprentice',
   friend1firstName: 'Nancy',
   friend1lastName: 'Burgess',
-  friend1companyName: 'Flatbook Labs',
+  friend1companyName: 'Axibook Labs',
   friend1jobTitle: 'Developer Apprentice',
   friend2firstName: 'Corinna',
   friend2lastName: 'Jackson',
-  friend2companyName: 'Flatbook Labs',
+  friend2companyName: 'Axibook Labs',
   friend2jobTitle: 'Senior Developer',
-  project1title: 'Flatbook',
-  project1description: 'The premier Flatiron School-based social network in the world.',
+  project1title: 'Axibook',
+  project1description: 'The premier Academy Xi-based social network in the world.',
   project2title: 'Scuber',
   project2description: 'A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.'
 };
@@ -219,18 +219,18 @@ function shallowIterator(target) {
 shallowIterator(userInfo);
 // LOG: Avi
 // LOG: Flombaum
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: Nancy
 // LOG: Burgess
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: Corinna
 // LOG: Jackson
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Senior Developer
-// LOG: Flatbook
-// LOG: The premier Flatiron School-based social network in the world.
+// LOG: Axibook
+// LOG: The premier Academy Xi-based social network in the world.
 // LOG: Scuber
 // LOG: A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.
 ```
@@ -375,14 +375,14 @@ const userInfo = {
   firstName: 'Avi',
   lastName: 'Flombaum',
   company: {
-    name: 'Flatbook Labs',
+    name: 'Axibook Labs',
     jobTitle: 'Developer Apprentice'
   },
   friends: [{
     firstName: 'Nancy',
     lastName: 'Burgess',
     company: {
-      name: 'Flatbook Labs',
+      name: 'Axibook Labs',
       jobTitle: 'Developer Apprentice'
     }
   },
@@ -390,13 +390,13 @@ const userInfo = {
     firstName: 'Corinna',
     lastName: 'Jackson',
     company: {
-      name: 'Flatbook Labs',
+      name: 'Axibook Labs',
       jobTitle: 'Lead Developer'
     }
   }],
   projects: [{
-    title: 'Flatbook',
-    description: 'The premier Flatiron School-based social network in the world.'
+    title: 'Axibook',
+    description: 'The premier Academy Xi-based social network in the world.'
   },
   {
     title: 'Scuber',
@@ -407,18 +407,18 @@ const userInfo = {
 deepIterator(userInfo);
 // LOG: Avi
 // LOG: Flombaum
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: Nancy
 // LOG: Burgess
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: Corinna
 // LOG: Jackson
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Lead Developer
-// LOG: Flatbook
-// LOG: The premier Flatiron School-based social network in the world.
+// LOG: Axibook
+// LOG: The premier Academy Xi-based social network in the world.
 // LOG: Scuber
 // LOG: A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.
 ```
@@ -443,18 +443,18 @@ function deepIterator(target) {
 deepIterator(userInfo);
 // LOG: Avi
 // LOG: Flombaum
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: Nancy
 // LOG: Burgess
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: Corinna
 // LOG: Jackson
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Lead Developer
-// LOG: Flatbook
-// LOG: The premier Flatiron School-based social network in the world.
+// LOG: Axibook
+// LOG: The premier Academy Xi-based social network in the world.
 // LOG: Scuber
 // LOG: A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.
 
@@ -524,7 +524,7 @@ function deepIterator(target) {
 deepIterator(userInfo);
 // LOG: Avi
 // LOG: Flombaum
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: We found an array
 // LOG: We found an array
@@ -552,18 +552,18 @@ function deepIterator(target) {
 deepIterator(userInfo);
 // LOG: Avi
 // LOG: Flombaum
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: Nancy
 // LOG: Burgess
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Developer Apprentice
 // LOG: Corinna
 // LOG: Jackson
-// LOG: Flatbook Labs
+// LOG: Axibook Labs
 // LOG: Lead Developer
-// LOG: Flatbook
-// LOG: The premier Flatiron School-based social network in the world.
+// LOG: Axibook
+// LOG: The premier Academy Xi-based social network in the world.
 // LOG: Scuber
 // LOG: A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.
 ```
